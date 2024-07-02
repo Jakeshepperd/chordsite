@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Chord Test</title>
+      <style>
+         :root {
+            --box-height: 251px; /* You can change this value to control the height of the boxes */
+         }
+         .container {
+            display: flex;
+         }
+         .column {
+            width: 50%;
+            height: 2581px;
+         }
+         .content {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+         }
+         .spacer {
+            height: calc(var(--box-height)); /* Spacer to push the first box down */
+         }
+         .box {
+            height: var(--box-height);
+            border: 1px solid black;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+         }
+         .box:last-child {
+            margin-bottom: 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="column content">
+            <div class="spacer"><h1>Play each chord using the column on the left, and pick the emotion that best represents your reaction on the right.</h1></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="box"><h4>Chord #1</h4>
+               <audio controls>
+                  <source src="cmajor.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box"><h4>Chord #2</h4>
+               <audio controls>
+                  <source src="cseven.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box"><h4>Chord #3</h4>
+               <audio controls>
+                  <source src="cmajorseven.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box"><h4>Chord #4</h4>
+               <audio controls>
+                  <source src="cminor.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box"><h4>Chord #5</h4>
+               <audio controls>
+                  <source src="cminorseven.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box"><h4>Chord #6</h4>
+               <audio controls>
+                  <source src="cminormajorseven.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box"><h4>Chord #7</h4>
+               <audio controls>
+                  <source src="cdiminished.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="box"><h4>Chord #8</h4>
+               <audio controls>
+                  <source src="caugmented.wav" type="audio/wav">
+                  Your browser does not support the audio element.
+                </audio>
+            </div>
+         </div>
+         <iframe class="column" src="https://docs.google.com/forms/d/e/1FAIpQLSd8OLGRlVLzm8ktfqOv_VDwKbCxoMYopZr96ZWI4tAQaVLSeg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+   </body>
+</html>
